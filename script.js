@@ -49,9 +49,9 @@ function addItem(description = '', price = 0, quantity = 0) {
             <input type="text" value="${description}" placeholder="Enter item description" onchange="updateItem(${id}, 'description', this.value)" 
                    class="w-full px-2 py-2 border border-gray-200 rounded focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none">
         </td>
-        <td class="p-3 text-right print:p-2">
+        <td class="p-3 text-center print:p-2">
             <input type="number" value="${price}" min="0" step="10" placeholder="0" onchange="updateItem(${id}, 'price', this.value)" 
-                   class="w-full px-2 py-2 border border-gray-200 rounded text-right focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none">
+                   class="w-full px-2 py-2 border border-gray-200 rounded text-center focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none">
         </td>
         <td class="p-3 text-right print:p-2">
             <input type="number" value="${quantity}" min="0" placeholder="0" onchange="updateItem(${id}, 'quantity', this.value)" 
